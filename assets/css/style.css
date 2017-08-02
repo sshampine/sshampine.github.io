@@ -110,9 +110,22 @@ p, label, textarea {
 	margin-right: 5px;
 }
 
+.pic {
+	float:left;
+	margin-right: 10px;
+	width: 200px;
+}
+
+figcaption {
+	font-size: 12px;
+	font-style: italic;
+}
+
 .folioImage {
 	float:left;
 	margin-right: 10px;
+	width: 100%;
+	height: 100%;
 }
 
 .footer {

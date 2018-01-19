@@ -1,48 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Basic Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Scott Shampine - Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel"stylesheet" type"text/css" href="assets/css/reset.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
 </head>
 <body>
-	<div class="header">
-		<div class="wrapper">
-			<h1 class="heading">Scott Shampine</h1>
-			<div class="nav">
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
+	<!-- Navbar -->
+	<nav class='navbar navbar-default'>
+		<div class='container'>
+			<div class='navbar-header'>
+				<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#myNavbar'>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+					<span class='icon-bar'></span>
+				</button>
+				<a class='navbar-brand' href='https://github.com/sshampine' target="_blank">Scott Shampine</a>
+			</div>
+			<div class='collapse navbar-collapse' id='myNavbar'>
+				<ul class='nav navbar-nav navbar-right'>
+					<li><a href='#who'">Who</a></li>
+					<li><a href='#about'>About</a></li>
+					<li><a href='#project'>Projects</a></li>
+				</ul>
+			</div>
+		</div>		
+	</nav>
+
+	<!-- First Container -->
+
+	<div class='container-fluid bg-1 text-center'>
+		<h3 class='margin' id="who">Who Am I?</h3>
+		<img src='assets/images/me.jpg' class='img-responsive img-circle margin me' />
+		<h3>Techno Geek</h3>
+	</div>
+
+	<!-- Second Container -->
+
+	<div class='container-fluid bg-2 text-center'>
+		<h3 class='margin' id="about">About Me</h3>
+		<p>Born and raised in Texas, I've been living in Austin almost 20 years. I've been interested in computers since the fourth grade. Currently I'm a systems administrator but would like to take my script writing to the next level. When not working, I'm keeping up with my favorite shows or gaming.</p>		
+	</div>
+
+	<!-- Third Container -->
+
+	<div class='container-fluid bg-3 text-center'>
+		<h2 class='margin' id='project'>Selected Projects</h3>
+		<div class='row'>
+			<div class="col-sm-4">
+				<h3>Top Taco</h3>
+				<hr>
+				<a href="https://github.com/wllm-chndlr/TopTaco" target="_blank"><img src='assets/images/topTaco.png' class='img-responsive margin proj' /></a>
+				<p>Toco ratings aggregator using Google Places and Facebook APIs</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>expenD3tures</h3>
+				<hr>
+				<a href='https://github.com/raj594/expenD3tures' target="_blank"><img src='assets/images/expend3tures.png' class='img-responsive margin proj' /></a>
+				<p>Expense tracking app using D3.js for data visualization. Passport.js and Bcrypt.js is used for login security.</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Project 3</h3>
+				<hr>
+				<a href='https://github.com/sshampine/project3a' target="_blank"><img src='assets/images/project3a.png' class='img-responsive margin proj' /></a>
+				<p>The best Crypotcurrenct site ever. EVER!</p>
 			</div>
 		</div>
 	</div>
-	<div class="main wrapper">
-	<div class="leftAside">
-		<h2>About Me</h2>
-		<div class="pic">
-		<img src="assets/images/me.jpg" class="folioImage">
-		<figcaption>Me with Brent Spiner</figcaption>
-		</div>
-		<div class="content">
-		<p>My interest in computers started in the fourth grade. The school had a TRS-80 that was shared between all classes. My fifth grade teacher purchased two TI-99/4a computers out of her own pocket for her class. I guess she saw I was interested in them and made me their 'gatekeeper'. Mrs. Cook saw the sys admin in me. My first program was in BASIC and printed Hello! on the screen.</p>
-			<div class="basic">
-				<p>&#62;10 print "Hello!"</p>
-				<p>&#62;20 goto 10</p>
-			</div>
-		<p>Now I'm a full-fledged system administrator who maintains corporate server and storage infrastructure. I'm ready for a change though. Typing in strange, colorful commands on a keyboard and making things appear on the screen is clever. Much more clever than <a href="https://youtu.be/t2F1rFmyQmY" target="_blank">turning a computer off then turning it back on again.</a></p>
-		</div>
-	</div>
-	<div class="rightAside">
-		<h3>Connect with Me</h3>
-		<a href="https://github.com/sshampine" target="_blank"><img src="assets/images/gitHubLogo.png" alt="github logo"></a>
-		<a href="http://www.linkedin.com/in/scott-shampine-93875a5" target="_blank"><img src="assets/images/linkedinLogo.png" alt="linkedin logo"> </a>
-		<a href="#"><img src="assets/images/stackoverflow.png" alt="stackoverflow logo"></a>
-	</div>
-	</div>
-	<div class="footer wrapper">
-		<div class="copyright">
-		<p>&copy;Copyright 2017 Scott Shampine</p>
-		</div>
-	</div>
+
+	<!-- Footer -->
+
+	<footer class='container-fluid bg-4 text-center'>
+		<p>&copy2018 Scott Shampine</p>
+		<a href="https://www.linkedin.com/in/scott-shampine/" target="_blank"><i class='fa fa-linkedin-square'></i></a> <a href="https://github.com/sshampine" target="_blank"><i class='fa fa-github-square'></i></a> <a href="mailto:sshampine@gmail.com?Subject=More Info" targert="_top"><i class='fa fa-envelope'></i></a>
+	</footer>
+
+	
 </body>
 </html>
